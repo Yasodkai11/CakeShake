@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/bgcake.jpg');
+    background-size: cover;
+    background-position: top center; /* Position the background image at the top center */
+}
+
+.container {
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px; /* Add padding equal to the height of the navbar */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+h1 {
+    text-align: center;
+    color: palevioletred;
+    margin-top: 50px;
+    z-index: 2;
+    position: relative;
+}
+
+.navbar {
+    position: fixed; /* Change to fixed */
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(255, 105, 180, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    left: 0px;
+    right: 40px;
+    float: right;
+
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 192, 203, 0.8);
+}
+
+.navbar li {
+    float: left;
+}
+
+.icon-cart svg {
+    width: 30px;
+    color: #eee;
+    float: left;
+}
+
+.icon-cart {
+    position: relative;
+    right: 20px;
+    
+
+}
+
+.icon-cart span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    color: #eee;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: -15px;
+}
+
+.cart-button {
+    float: right;
+}
+
+.cart-button a {
+    color: white;
+    background-color: palevioletred;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.cart-button a:hover {
+    background-color: rgba(255, 192, 203, 0.8);
+}
+
+.cart-button a i {
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+.cakeItems .item img {
+    width: 100%;
+}
+
+.cakeItems {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.cakeItems .item {
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.cakeItems .item h2 {
+    font-weight: 500;
+    font-size: small;
+}
+
+.cakeItems .item .price {
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+.cakeItems .item button {
+    background-color: #533432;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.cartTab {
+    width: 400px;
+    background-color: rgba(255, 192, 203, 0.8);
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: 0.5s;
+}
+
+body.showCart.cartTab {
+    inset: 0 0 0 auto;
+}
+
+body.showCart .container {
+    transform: translateX(-250px);
+}
+
+.cartTab h1 {
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+    color: #eee;
+}
+
+.cartTab .btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab .btn button {
+    background-color: palevioletred;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cartTab .btn .close {
+    background-color: #eee;
+}
+
+.cartTab .listcart .item img {
+    width: 100%;
+}
+
+.cartTab .listcart .item {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.listcart .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.listcart .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+}
+
+.listcart .quantity span:nth-child(even) {
+    background-color: #eee1;
+}
+
+.listcart {
+    overflow-y: auto;
+}
+
+.listcart::-webkit-scrollbar {
+    width: 0;
+}

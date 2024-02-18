@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Valentine Cake",
+        "price": 3000,
+        "image": "images/cake1.webp"
+    },
+    {
+        "id": 2,
+        "name": "Valentine Cake",
+        "price": 3000,
+        "image": "images/cake2.webp"
+    },
+    {
+        "id": 3,
+        "name": "Valentine Cake",
+        "price": 3000,
+        "image": "images/cake3.webp"
+    },
+    {
+        "id": 4,
+        "name": "Valentine Cake",
+        "price": 3000,
+        "image": "images/cake4.webp"
+    },
+    {
+        "id": 5,
+        "name": "Valentine Cake",
+        "price": 3000,
+        "image": "images/cake5.webp"
+    },
+    {
+        "id": 6,
+        "name": "Cup Cake",
+        "price": 3000,
+        "image": "images/cake6.webp"
+    },
+    {
+        "id": 7,
+        "name": "Valentine Cake",
+        "price": 3000,
+        "image": "images/cake7.webp"
+    }
+]
